@@ -1,0 +1,23 @@
+{
+  "React JSDoc": {
+    "prefix": "jsdocreact",
+    "body": [
+      "",
+      "/**",
+      " * ${TM_FILENAME_BASE/(\\w+)(-)?/${1:/capitalize}${4:+-}/g} Component",
+      " * @component",
+      " * @category Components",
+      " * @subcategory $0",
+      " */"
+    ],
+    "description": "React JSDoc"
+  },
+  "React PropTypes to JSDoc": {
+    "prefix": "jsdocproptypes",
+    "body": [
+      "  /** ${TM_FILENAME_BASE/(\\w+)(-)?/${1:/capitalize}${4:+-}/g}'s ${TM_CURRENT_LINE/(:.*|\\s)//g} 🚧 */",
+      ""
+    ],
+    "description": "React PropTypes to JSDoc"
+  }
+}
