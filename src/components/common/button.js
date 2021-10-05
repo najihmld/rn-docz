@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View } from 'react-native';
 import PropTypes from 'prop-types';
+import tw from '../../../tailwind';
 
-function Button({ title }) {
+export default function Button({ title, onPress }) {
   return (
-    <View>
+    <View style={tw.style('h-12 w-20 rounded bg-purple-500')} onPress={onPress}>
       <Text>{title}</Text>
     </View>
   );
@@ -12,9 +13,11 @@ function Button({ title }) {
 
 Button.propTypes = {
   /**
-   * This is a pretty good description for this prop.
+   * mantap
    */
   title: PropTypes.string,
+  /**
+   * okkk
+   */
+  onPress: PropTypes.func,
 };
-
-export default Button;
